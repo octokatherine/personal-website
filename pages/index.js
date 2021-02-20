@@ -5,9 +5,12 @@ export default function Home() {
     <Layout>
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-3xl font-semibold tracking-widest ">KATHERINE PETERSON</h1>
-          <hr className="w-20 my-10 border-gray-400" />
-          <h2 className="text-lg tracking-widest ">SOFTWARE ENGINEER</h2>
+          <img className="w-32 h-32 mb-8 rounded-full" src="/katherine.jpg" alt="Katherine" />
+          <h1 className="px-2 text-3xl font-semibold tracking-widest text-center">
+            KATHERINE PETERSON
+          </h1>
+          <hr className="w-16 my-8 border-gray-400" />
+          <h2 className="text-lg tracking-widest text-center">SOFTWARE ENGINEER</h2>
         </div>
       </div>
     </Layout>
