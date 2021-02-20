@@ -9,7 +9,7 @@ export default function Home() {
           <h1 className="px-2 text-3xl font-semibold tracking-widest text-center">
             KATHERINE PETERSON
           </h1>
-          <hr className="w-16 my-8 border-gray-400" />
+          <hr className="w-16 my-8 border-gray-300" />
           <h2 className="text-lg tracking-widest text-center">SOFTWARE ENGINEER</h2>
         </div>
       </div>
