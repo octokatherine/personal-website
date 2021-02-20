@@ -10,26 +10,29 @@ export default function Layout({ children }) {
         <title>Katherine Peterson</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div>
+      <div
+        style={{ minWidth: '24rem', maxWidth: '37rem' }}
+        className="flex flex-col items-center justify-center w-2/3"
+      >
         <div className="flex flex-wrap justify-center leading-6">
           <Link href="/">
-            <button className="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full hover:text-lightBlue-600 hover:border-lightBlue-600">
+            <button className="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full focus:outline-none hover:text-lightBlue-600 hover:border-lightBlue-600">
               HOME
             </button>
           </Link>
           <Link href="/about">
-            <button className="w-24 py-1 mx-2 text-xs leading-6 tracking-widest border border-gray-300 rounded-full hover:text-lightBlue-600 hover:border-lightBlue-600">
+            <button className="w-24 py-1 mx-2 text-xs leading-6 tracking-widest border border-gray-300 rounded-full focus:outline-none hover:text-lightBlue-600 hover:border-lightBlue-600">
               ABOUT
             </button>
           </Link>
           <Link href="/projects">
-            <button className="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full hover:text-lightBlue-600 hover:border-lightBlue-600">
+            <button className="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full focus:outline-none hover:text-lightBlue-600 hover:border-lightBlue-600">
               PROJECTS
             </button>
           </Link>
         </div>
-        <div className="flex flex-col items-center justify-center w-full max-w-2xl py-8 my-6 border-t border-b border-gray-300">
-          <div className="flex justify-center">{children}</div>
+        <div className="flex flex-col items-center justify-center w-full py-8 my-6 border-t border-b border-gray-300">
+          {children}
         </div>
         <div className="flex items-center justify-center">
           <a
