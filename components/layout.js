@@ -25,11 +25,11 @@ export default function Layout({ children }) {
               ABOUT
             </button>
           </Link>
-          <Link href="/projects">
+          {/* <Link href="/projects">
             <button className="w-24 py-1 text-xs leading-6 tracking-widest border border-gray-300 rounded-full focus:outline-none hover:text-lightBlue-600 hover:border-lightBlue-600">
               PROJECTS
             </button>
-          </Link>
+          </Link> */}
         </div>
         <div className="flex flex-col items-center justify-center w-full py-8 my-6 border-t border-b border-gray-300">
           {children}
