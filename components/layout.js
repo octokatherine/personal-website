@@ -32,16 +32,18 @@ export default function Layout({ children }) {
           <div className="flex justify-center">{children}</div>
         </div>
         <div className="flex items-center justify-center">
-          <FontAwesomeIcon className="mr-8 text-3xl text-gray-500 cursor-pointer" icon={faGithub} />
-          <FontAwesomeIcon
-            className="mr-8 text-3xl text-gray-500 cursor-pointer"
-            icon={faTwitter}
-          />
-          <FontAwesomeIcon
-            className="mr-8 text-3xl text-gray-500 cursor-pointer"
-            icon={faLinkedinIn}
-          />
-          <FontAwesomeIcon className="text-3xl text-gray-500 cursor-pointer" icon={faDev} />
+          <a href="https://github.com/katherinepeterson" target="_blank">
+            <FontAwesomeIcon className="mr-8 text-3xl text-gray-500" icon={faGithub} />
+          </a>
+          <a href="https://twitter.com/katherinecodes" target="_blank">
+            <FontAwesomeIcon className="mr-8 text-3xl text-gray-500" icon={faTwitter} />
+          </a>
+          <a href="https://www.linkedin.com/in/katherine-peterson/" target="_blank">
+            <FontAwesomeIcon className="mr-8 text-3xl text-gray-500" icon={faLinkedinIn} />
+          </a>
+          <a href="https://dev.to/katherinecodes" target="_blank">
+            <FontAwesomeIcon className="text-3xl text-gray-500" icon={faDev} />
+          </a>
         </div>
       </div>
     </div>
