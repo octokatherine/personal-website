@@ -54,7 +54,7 @@ export default function Layout({ children }) {
         style={{ minWidth: '24rem', maxWidth: '37rem' }}
         className="flex flex-col items-center justify-center w-2/3"
       >
-        <div className="fixed top-3 right-3">
+        <div className="fixed cursor-pointer top-3 right-3">
           <SunMoon isDarkMode={theme == 'dark'} setIsDarkMode={setIsDarkMode} />
         </div>
         <motion.div layoutId="nav" className="flex flex-wrap justify-center leading-6">
