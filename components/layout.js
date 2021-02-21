@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect } from 'react'
 import { useLocalStorage } from '../hooks/useLocalStorage'
-import SunMoon from './sun-moon'
+import dynamic from 'next/dynamic'
+const SunMoon = dynamic(() => import('./sun-moon'), { ssr: false })
 
 export default function Layout({ children }) {
   const [theme, setTheme] = useLocalStorage('theme', 'light')
