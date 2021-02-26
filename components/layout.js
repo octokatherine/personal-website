@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect } from 'react'
 import { useLocalStorage } from '../hooks/useLocalStorage'
-import dynamic from 'next/dynamic'
-const SunMoon = dynamic(() => import('./sun-moon'), { ssr: false })
+import DarkModeToggle from 'dark-mode-toggle-animation'
 
 export default function Layout({ children }) {
   const [theme, setTheme] = useLocalStorage('theme', 'light')
@@ -40,11 +39,6 @@ export default function Layout({ children }) {
     }
   }
 
-  const setIsDarkMode = (isDarkMode) => {
-    const newTheme = isDarkMode ? 'dark' : 'light'
-    setTheme(newTheme)
-  }
-
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen text-gray-800 transition duration-1000 ease-in-out dark:text-white dark:bg-blueGray-700">
       <Head>
@@ -56,7 +50,14 @@ export default function Layout({ children }) {
         className="flex flex-col items-center justify-center w-2/3"
       >
         <div className="fixed cursor-pointer top-3 right-3">
-          <SunMoon isDarkMode={theme == 'dark'} setIsDarkMode={setIsDarkMode} />
+          <DarkModeToggle
+            mode={theme !== 'dark' ? 'sun' : 'moon'}
+            onClick={toggleDarkMode}
+            width="3rem"
+            moonColor="white"
+            sunColor="#334155"
+            animationDuration={1}
+          />
         </div>
         <motion.div layoutId="nav" className="flex flex-wrap justify-center leading-6">
           <Link href="/">
