@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect } from 'react'
 import { useLocalStorage } from '../hooks/useLocalStorage'
-import DarkModeToggle from 'dark-mode-toggle-animation'
+import dynamic from 'next/dynamic'
+const DarkModeToggle = dynamic(() => import('dark-mode-toggle-animation'), { ssr: false })
 
 export default function Layout({ children }) {
   const [theme, setTheme] = useLocalStorage('theme', 'light')
