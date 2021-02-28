@@ -53,11 +53,11 @@ export default function Layout({ children }) {
       >
         <div className="fixed cursor-pointer top-3 right-3">
           <DarkModeToggle
-            mode={theme == 'dark' ? 'moon' : 'sun'}
+            mode={theme == 'dark' ? 'sun' : 'moon'}
             onClick={toggleDarkMode}
             width="3rem"
-            moonColor="white"
-            sunColor="#334155"
+            moonColor="#334155"
+            sunColor="white"
             animationDuration={1}
           />
         </div>
