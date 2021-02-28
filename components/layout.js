@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import { faGithub, faTwitter, faLinkedinIn, faDev } from '@fortawesome/free-brands-svg-icons'
+import { faPencilAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect } from 'react'
@@ -51,7 +52,7 @@ export default function Layout({ children }) {
       >
         <div className="fixed cursor-pointer top-3 right-3">
           <DarkModeToggle
-            mode={theme !== 'dark' ? 'sun' : 'moon'}
+            mode={theme == 'dark' ? 'moon' : 'sun'}
             onClick={toggleDarkMode}
             width="3rem"
             moonColor="white"
@@ -99,12 +100,19 @@ export default function Layout({ children }) {
           >
             <FontAwesomeIcon className="mr-6 text-2xl" icon={faLinkedinIn} />
           </a>
-          <a
+          {/* <a
             className="text-gray-400 dark:text-white hover:text-lightBlue-600 dark:hover:text-pink-500"
             href="https://dev.to/katherinecodes"
             target="_blank"
           >
             <FontAwesomeIcon className="mr-6 text-2xl" icon={faDev} />
+          </a> */}
+          <a
+            className="text-gray-400 dark:text-white hover:text-lightBlue-600 dark:hover:text-pink-500"
+            href="https://blog.katherinempeterson.com"
+            target="_blank"
+          >
+            <FontAwesomeIcon className="mr-6 text-2xl" icon={faPencilAlt} />
           </a>
         </motion.div>
       </div>
