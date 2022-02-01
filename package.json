@@ -15,7 +15,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "dark-mode-toggle-animation": "^1.0.0",
     "framer-motion": "^3.6.2",
-    "next": "10.0.7",
+    "next": "11.1.3",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
