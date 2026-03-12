@@ -16,7 +16,7 @@ export default function About() {
           people who love building things.
         </div>
         <div className="text-center text-gray-800 dark:text-white">
-          When I'm not at my keyboard, I'm spending time with my husband, daughter and dog, drinking
+          When I'm not at my keyboard, I'm spending time with my husband, our daughter and our dog, drinking
           coffee, playing games, reading, or spending time outside.
         </div>
       </motion.div>
